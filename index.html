@@ -8,7 +8,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src='js/script.js'></script>
     <script src='js/login-signup.js'></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -34,7 +33,6 @@
         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Log in</button>
         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign up</button>
 
-        <a href="AboutUs.html"><h3>Want to know more?</h3> </a>
    	</div>
 
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -51,13 +49,13 @@
                               <label class="sr-only">Login/e-mail</label>
 					          <div class="input-group required">
 					            <div class="input-group-addon"><i class="fa fa-at"></i></div>
-					            <input type="text" class="form-control" id="lLogin" placeholder="Login/e-mail" min="1">
+					            <input type="text" class="form-control" id="lLogin" placeholder="Login/e-mail" value="demoPerson" min="1">
 					          </div>
 
                               <label class="sr-only">Password</label>
 					          <div class="input-group required">
 					            <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-					            <input type="password" class="form-control" id="uPassword" placeholder="Password" min="1">
+					            <input type="password" class="form-control" id="uPassword" placeholder="Password" value="admin123" min="1">
 					          </div>
 
 
@@ -66,7 +64,7 @@
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Remember me
+                                    <input type="checkbox" checked> Remember me
                                 </label>
                             </div> <!-- /.checkbox -->
                         </form>

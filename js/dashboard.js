@@ -6,7 +6,7 @@
     var arr = [];
 
         arr = [{
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "anniversary",
             "Status": "Planned",
@@ -23,7 +23,7 @@
         },
 
         {
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "anniversary",
             "Status": "Planned",
@@ -40,7 +40,7 @@
         },
 
         {
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "anniversary",
             "Status": "Planned",
@@ -57,7 +57,7 @@
         },
 
         {
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "anniversary",
             "Status": "Planned",
@@ -74,7 +74,7 @@
         },
 
         {
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "anniversary",
             "Status": "Planned",
@@ -90,7 +90,7 @@
             "HealthConditions": "Rozrusznik serca"
         },
         {
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "valentines day",
             "Status": "Finished",
@@ -106,7 +106,7 @@
             "HealthConditions": "Rozrusznik serca"
         },
         {
-        "login": "John1975",
+        "login": "demoPerson",
             "Person": "Steven Kowalski",
             "RouteName": "valentines day",
             "Status": "Ongoing",
