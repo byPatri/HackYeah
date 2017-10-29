@@ -24,9 +24,15 @@ form .submit {margin-top:30px;}
 /* homepage */
 body.home {
 	background-image: url('../img/mountain.jpg');
+	-webkit-background-image: url('../img/mountain.jpg');
+	-moz-background-image: url('../img/mountain.jpg');
+	-o-background-image: url('../img/mountain.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	display:flex;justify-content: center;align-items: center;flex-direction: column;
 	min-height:100vh;
 }
@@ -35,7 +41,7 @@ body.home {
 body.home #box {max-width:600px;padding:2%;background-color: rgba(255, 255, 255, 0.3);text-align:center;position:relative;}
 body.home .logo {width:150px;height:auto;margin-bottom:30px;}
 
-body.home h1 {color: rgb(31,88,140);font-size: 35px;}
+body.home h1 {color: #337ab7;font-size: 35px;}
 
 body.home p {
 	padding-left: 15%;
