@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en-EN">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TripSaver!</title>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/script.js'></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TripSaver!</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="new-trip.html">Add new trip</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="profile">Hello, <a href="profile.html">Guest</a>!</li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div class="container">
+    <div id="main">
+        <header>
+          <h1>Add a new trip</h1>
+          <p>Fill in the following form to ensure that in case of emerency you will not be left alone!</p>
+        </header> 
+
+
+        <form id="add-new-trip">
+          <h2>Trip details</h2>
+          <p>Give us details about your trip!</p>
+          
+          <div class="input-group" id="trip-type-dropdown-container">
+            <div class="input-group-addon"><i class="fa fa-smile-o"></i></div>
+            <select id="trip-type" class="form-control" onChange="getSelectedValue(this);">
+                <option value="" disabled selected>What are you going to do?</option>
+                <option value="hiking">Hiking</option>
+                <option value="climbing">Climbing</option>
+                <option value="kayaking">Kayaking</option>
+                <option value="nordic-walking">Nordic Walking</option>
+                <option value="sealing">Sealing</option>
+                <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="trip-other-box hidden">
+            <label class="sr-only">What other kind of trip are you going to have?</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+              <input type="text" class="form-control" id="trip-type-other" placeholder="What other kind of trip are you going to have?">
+            </div>
+          </div>
+
+          <label class="sr-only">Trip start place</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+            <input type="text" class="form-control" id="trip-start-place" placeholder="Trip start place" min="1">
+          </div>
+          
+          <label class="sr-only">Trip destination</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+            <input type="text" class="form-control" id="trip-end-place" placeholder="Trip destination">
+          </div>
+
+          <label class="sr-only">Trip route</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-map-o"></i></div>
+            <input type="text" class="form-control" id="trip-route" placeholder="Route">
+          </div>
+
+          <label class="sr-only">Trip start time</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+            <input type="datetime-local" class="form-control" id="trip-start-time" placeholder="Trip start time">
+          </div>
+
+          <label class="sr-only">Trip end time</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+            <input type="datetime-local" class="form-control" id="trip-end-time" placeholder="Trip end time">
+          </div>
+
+          <label class="sr-only">Additional comment on a trip</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-comment-o"></i></div>
+            <input type="input" class="form-control" id="comment" placeholder="Additional comment on a trip">
+          </div>
+
+
+
+          <h2>Person to contact</h2>
+          <p>Who should be contacted in case of emergency?</p>
+
+          <label class="sr-only">Name and surname</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-user-circle-o"></i></div>
+            <input type="text" class="form-control" id="contact-name" placeholder="Name and surname">
+          </div>
+
+
+          <label class="sr-only">Phone number</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-mobile"></i></div>
+            <input type="text" class="form-control" id="contact-phone" placeholder="Phone number">
+          </div>
+
+          <input type="button" value="Let's have a safe trip!" class="btn btn-primary" onclick="validateAddTripForm()">
+
+
+        </form>
+    </div>
+  </div>
+
+</body>
+</html>

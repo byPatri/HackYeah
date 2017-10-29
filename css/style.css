@@ -1,5 +1,19 @@
-body {background: #fafafa;}
-#main {padding: 5%;border-radius:2%;border:1px solid #eee;background:#fff;margin-top:80px;margin-bottom:30px;}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+body {background: #eee;font-family: 'Montserrat', sans-serif;}
+#main {padding: 5%;border-radius:20px;border:1px solid #ccc;background:#fff;margin-top:80px;margin-bottom:30px;}
+
+header {margin-bottom:30px;}
+
+h1, h2, h3, h4, h5, h6 {font-weight:700;}
+/* menu */
+.nav > li.profile {color:#fff;}
+.nav > li.profile > a {display:inline-block;padding-left:5px;padding-right:2px;color:#fff;}
+.nav > li.profile > a:hover {color:#ddd;}
+
+
+/*add trip form*/
+#add-new-trip input, #add-new-trip select {max-width:600px;}
 .input-group {margin-bottom:5px;}
 .input-group-addon {min-width:42px;}
+

@@ -1,0 +1,173 @@
+<html lang="en-EN">
+<head>
+    
+    <meta charset="utf-8" />
+    <title>Hike Safe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel = "stylesheet" href = "font-awesome/css/font-awesome.min.css" type="text/css">
+
+</head>
+
+<body>
+	<div class="container-fluid text-center" id="box">
+		
+		<div class="row">		
+			<h1>Going on an adventure?</h1>
+			<h2>Log in to submit your route
+			and estimated time of return.
+			We will inform your friend if you don't make it back on time.
+				</h2>
+		</div>
+	
+	
+	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+    Log in
+	</button>
+	
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Log in</h4>
+			</div> <!-- /.modal-header -->
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Email">
+							<label for="uLogin" class="input-group-addon fa fa-user"></label>
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password">
+							<i class="fa fa-user"></i>
+							
+						</div> <!-- /.input-group -->
+					</div> <!-- /.form-group -->
+
+					<label class="sr-only">Name and surname</label>
+          <div class="input-group required">
+            <div class="input-group-addon"><i class="fa fa-user-circle-o"></i></div>
+            <input type="text" class="form-control" id="contact-name" placeholder="Name and surname">
+          </div>
+
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div> <!-- /.checkbox -->
+				</form>
+
+			</div> <!-- /.modal-body -->
+
+			<div class="modal-footer">
+				<button id="log" class="form-control btn btn-primary">Log In</button>
+
+				<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+						<span class="sr-only">progress</span>
+					</div>
+				</div>
+			</div> <!-- /.modal-footer -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!--Sign up button-->
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    Sign up
+	</button>
+	
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Log in</h4>
+			</div> <!-- /.modal-header -->
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Email">
+							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+						</div>
+					</div> <!-- /.form-group -->
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uFirstName" placeholder="First name">
+							<label for="uFirstName" class="input-group-addon glyphicon glyphicon-user"></label>
+						</div>
+					</div> <!-- /.form-group -->
+					
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLastName" placeholder="Last name">
+							<label for="uLastName" class="input-group-addon glyphicon glyphicon-user"></label>
+						</div>
+					</div> <!-- /.form-group -->
+					
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password">
+							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+						</div> <!-- /.input-group -->
+					</div> <!-- /.form-group -->
+					
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uRepeatPassword" placeholder="Repeat password">
+							<label for="uRepeatPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+						</div> <!-- /.input-group -->
+					</div> <!-- /.form-group -->
+					
+					
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div> <!-- /.checkbox -->
+				</form>
+
+			</div> <!-- /.modal-body -->
+
+			<div class="modal-footer">
+				<button id='sign' class="form-control btn btn-primary">Sign In</button>
+
+				<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+						<span class="sr-only">progress</span>
+					</div>
+				</div>
+			</div> <!-- /.modal-footer -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<a href="AboutUs.html">
+    <h3>Want to know more?</h3> 
+</a>
+
+</body>
+
+<footer>
+</footer>
+
+</html>
