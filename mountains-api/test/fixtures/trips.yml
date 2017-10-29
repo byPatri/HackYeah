@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+trip_one:
+  trip_category: Kayaking
+  start_point: Morskie Oko
+  end_point: Zakopane
+  trail_id: 1
+  start_time: <%= DateTime.now.in_time_zone(Time.zone).beginning_of_day %>
+  end_time: <%= DateTime.now.in_time_zone(Time.zone).beginning_of_day + 5.hours %>
+  comment: Two people kayaking trip
+  current_state: planned
+
+trip_two:
+  trip_category: Climbing
+  start_point: Zakopane
+  end_point: Orla Perć
+  trail_id: 2
+  start_time: <%= DateTime.now.in_time_zone(Time.zone).beginning_of_day %>
+  end_time: <%= DateTime.now.in_time_zone(Time.zone).beginning_of_day + 6.hours %>
+  comment: Solo climbing expedition
+  current_state: finished

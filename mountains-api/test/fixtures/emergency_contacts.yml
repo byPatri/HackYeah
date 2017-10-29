@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+em_contact_one:
+  first_name: Waldek
+  last_name: Kowalski
+  phone_nr: "+48111222333"
+  email: testowy.emergency@test.pl
+  user_id: 1
+
+em_contact_two:
+  first_name: Asia
+  last_name: Nowak
+  phone_nr: "501111222333"
+  email: testowy2.emergency@test.pl
+  user_id: 2

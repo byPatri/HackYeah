@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+user_one:
+  email: user@test.pl
+  encrypted_password: password123
+  first_name: Lucy
+  last_name: McGovan
+  phone_nr: "+48555555555"
+
+user_two:
+  email: user2@test.pl
+  encrypted_password: password124
+  first_name: John
+  last_name: Krasinski
+  phone_nr: "+44444444444"
