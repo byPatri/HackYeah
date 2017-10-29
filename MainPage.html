@@ -5,6 +5,7 @@
     <title>Hike Safe</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src="js/logIn.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<link rel="stylesheet" href="MainStyle.css">
@@ -42,19 +43,21 @@
 				<form role="form">
 					<div class="form-group">
 						<div class="input-group">
-							<input type="text" class="form-control" id="uLogin" placeholder="Email">
-							<label for="uLogin" class="input-group-addon fa fa-user"></label>
+							<input type="text" class="form-control" id="lLogin" placeholder="Email">
+							<label for="lLogin" class="input-group-addon fa fa-user"></label>
 						</div>
 					</div> <!-- /.form-group -->
 
 					<div class="form-group">
 						<div class="input-group">
-							<input type="password" class="form-control" id="uPassword" placeholder="Password">
-							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+							<input type="password" class="form-control" id="lPassword" placeholder="Password">
+							<label for="lPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
 							
 						</div> <!-- /.input-group -->
 					</div> <!-- /.form-group -->
-
+                           	 <div class="warning" id="warningLog" hidden="hidden">
+                                	<p>Please fill in missing data to sign in</p>
+                           	 </div>
 					<div class="checkbox">
 						<label>
 							<input type="checkbox"> Remember me
@@ -98,39 +101,44 @@
 				<form role="form">
 					<div class="form-group">
 						<div class="input-group">
-							<input type="text" class="form-control" id="uLogin" placeholder="Email">
-							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+							<input type="text" class="form-control" id="sLogin" placeholder="Email">
+							<label for="sLogin" class="input-group-addon glyphicon glyphicon-user"></label>
 						</div>
 					</div> <!-- /.form-group -->
 
 					<div class="form-group">
 						<div class="input-group">
-							<input type="text" class="form-control" id="uFirstName" placeholder="First name">
-							<label for="uFirstName" class="input-group-addon glyphicon glyphicon-user"></label>
+							<input type="text" class="form-control" id="sFirstName" placeholder="First name">
+							<label for="sFirstName" class="input-group-addon glyphicon glyphicon-user"></label>
 						</div>
 					</div> <!-- /.form-group -->
 					
 					<div class="form-group">
 						<div class="input-group">
-							<input type="text" class="form-control" id="uLastName" placeholder="Last name">
-							<label for="uLastName" class="input-group-addon glyphicon glyphicon-user"></label>
+							<input type="text" class="form-control" id="sLastName" placeholder="Last name">
+							<label for="sLastName" class="input-group-addon glyphicon glyphicon-user"></label>
 						</div>
 					</div> <!-- /.form-group -->
 					
 					<div class="form-group">
 						<div class="input-group">
-							<input type="password" class="form-control" id="uPassword" placeholder="Password">
-							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+							<input type="password" class="form-control" id="sPassword" placeholder="Password">
+							<label for="sPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
 						</div> <!-- /.input-group -->
 					</div> <!-- /.form-group -->
 					
 					<div class="form-group">
 						<div class="input-group">
-							<input type="password" class="form-control" id="uRepeatPassword" placeholder="Repeat password">
-							<label for="uRepeatPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+							<input type="password" class="form-control" id="sRepeatPassword" placeholder="Repeat password">
+							<label for="sRepeatPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
 						</div> <!-- /.input-group -->
 					</div> <!-- /.form-group -->
-					
+				    <div class="warning" id="warningSign" hidden="hidden">
+					<p>Please fill in missing data to sign in</p>
+				    </div>
+				    <div class="warningPassword" id="warningPassword" hidden="hidden">
+					<p>Repeated password does not match main password</p>
+				    </div>				
 					
 					<div class="checkbox">
 						<label>
@@ -142,7 +150,7 @@
 			</div> <!-- /.modal-body -->
 
 			<div class="modal-footer">
-				<button id='sign' class="form-control btn btn-primary">Sign In</button>
+				<button id="sign" class="form-control btn btn-primary">Sign In</button>
 
 				<div class="progress">
 					<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
