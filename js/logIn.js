@@ -85,6 +85,6 @@ function toServer(myJSON) {
         }
     });
 
- //   $(location).attr('href',"Dashboard.html");
+    $(location).attr('href',"Dashboard.html");
 
 }
