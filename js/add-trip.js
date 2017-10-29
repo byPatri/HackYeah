@@ -1,6 +1,11 @@
 $(function () {
     console.log("start add");
-
+    $("input").on('focus', function () {
+        $(this).removeClass("error");
+    });
+     $("select").on('focus', function () {
+        $(this).removeClass("error");
+    });
 });
 
 function validate() {
