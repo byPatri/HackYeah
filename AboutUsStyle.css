@@ -1,0 +1,17 @@
+/* ABOUT US PAGE*/
+
+h4 {
+	color: rgb(20,58,92);
+	font-size: 20px;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+h4#bottomRow {
+	padding: 20px;
+}
+
+#box {
+	width: 60%;
+}
+/*END*/
